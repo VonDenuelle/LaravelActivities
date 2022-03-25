@@ -1,0 +1,87 @@
+.container {
+    max-width: 960px;
+  }
+  
+  /*
+   * Custom translucent site header
+   */
+  
+  .site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+  .site-header a {
+    color: #8e8e8e;
+    transition: color .15s ease-in-out;
+  }
+  .site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .headline{
+    background: url('https://www.lenovo.com/medias/lenovo-laptop-legion-5-15-amd-subseries-feature-2-ultimate-performance.jpg?context=bWFzdGVyfHJvb3R8MjU2MDA4fGltYWdlL2pwZWd8aGU2L2hjMy8xMTUzNzg5ODgzMTkwMi5qcGd8MDI3MzRiZGVhMDRhOTQyNmFlMWNmNmUxZWU2NTU5NWQzZGRmYTA1NDhhNDExNjM2YjgyMjYyOWRhNmMxZDczMg&w=1920');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .headline-text{
+    background-color: rgba(0, 0, 0, .60);
+  }
+  .headline-text h1, p, a{
+    color : #fff;
+  }
+  .second-section{
+    color: #333;
+  }
+  /*
+   * Dummy devices (replace them with your own or something else entirely!)
+   */
+  
+  .product-device {
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    background-color: #333;
+    border-radius: 21px;
+    transform: rotate(30deg);
+  }
+  
+  .product-device::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+  }
+  
+  .product-device-2 {
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+    background-color: #e5e5e5;
+  }
+  footer .container p,footer .container a{
+    color : #333;
+  }
+  
+  /*
+   * Extra utilities
+   */
+  
+  .flex-equal > * {
+    flex: 1;
+  }
+  @media (min-width: 768px) {
+    .flex-md-equal > * {
+      flex: 1;
+    }
+  }
+  
